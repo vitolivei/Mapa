@@ -6,7 +6,7 @@ markmap:
 
 # ⚡ JavaScript
 
-- [👉 ⬅ Voltar para HOME](../Home.html)
+- [👉 ⬅ Voltar para HOME](../index.html)
 
 > Linguagem usada para interatividade, lógica e manipulação do HTML no navegador.
 

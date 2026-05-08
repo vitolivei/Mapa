@@ -5,7 +5,7 @@ HTML é a linguagem base da web. Ele define a estrutura das páginas.
 ---
 
 ## 🏠 Navegação
-- [⬅ Voltar para Home](../Home.html)
+- [⬅ Voltar para Home](../index.html)
 
 ---
 

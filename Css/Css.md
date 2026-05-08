@@ -5,7 +5,7 @@ CSS define o estilo das páginas HTML.
 ---
 
 ## 🏠 Navegação
-- [⬅ Voltar para Home](../Home.html)
+- [⬅ Voltar para Home](../index.html)
 
 ---
 
