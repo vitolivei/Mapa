@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"","children":[{"content":"1.3 JavaScript","children":[{"content":"1.3.1 DOM","children":[],"payload":{"tag":"li","lines":"1,2"}},{"content":"1.3.2 Eventos","children":[],"payload":{"tag":"li","lines":"2,3"}},{"content":"1.3.3 Fun&#xe7;&#xf5;es","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"1.3.4 Arrays e Objetos","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<a href=\"JavaScript/JavaScript.html\">&#x1f4c2; Abrir JavaScript</a>","children":[],"payload":{"tag":"li","lines":"5,7"}}],"payload":{"tag":"h2","lines":"0,1"}},{"content":"1.1 Html","children":[{"content":"<a href=\"Html/Html.html\">&#x1f4c2; Abrir Html</a>","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"9,10"}},{"content":"1.2 Css","children":[{"content":"<a href=\"Css/Css.html\">&#x1f4c2; Abrir Css</a>","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h2","lines":"14,15"}},{"content":"1.4 Php","children":[{"content":"<a href=\"Php/Php.html\">&#x1f4c2; Abrir Php</a>","children":[],"payload":{"tag":"li","lines":"20,22"}}],"payload":{"tag":"h2","lines":"19,20"}},{"content":"1.5 CiCd","children":[{"content":"<a href=\"CiCd/CiCd.html\">&#x1f4c2; Abrir CiCd</a>","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h2","lines":"24,25"}},{"content":"1.6 Docker","children":[{"content":"<a href=\"Docker/Docker.html\">&#x1f4c2; Abrir Docker</a>","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h2","lines":"29,30"}},{"content":"1.7 Git","children":[{"content":"<a href=\"Git/Git.html\">&#x1f4c2; Abrir Git</a>","children":[],"payload":{"tag":"li","lines":"35,37"}}],"payload":{"tag":"h2","lines":"34,35"}},{"content":"1.8 Linux","children":[{"content":"<a href=\"Linux/Linux.html\">&#x1f4c2; Abrir Linux</a>","children":[],"payload":{"tag":"li","lines":"40,42"}}],"payload":{"tag":"h2","lines":"39,40"}},{"content":"1.9 Nginx","children":[{"content":"<a href=\"Nginx/Nginx.html\">&#x1f4c2; Abrir Nginx</a>","children":[],"payload":{"tag":"li","lines":"45,47"}}],"payload":{"tag":"h2","lines":"44,45"}},{"content":"1.10 Kubernetes","children":[{"content":"<a href=\"Kubernetes/Kubernetes.html\">&#x1f4c2; Abrir Kubernetes</a>","children":[],"payload":{"tag":"li","lines":"50,51"}}],"payload":{"tag":"h2","lines":"49,50"}}]},{})</script>
+</body>
+</html>

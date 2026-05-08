@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"","children":[{"content":"&#x26a1; JavaScript","children":[{"content":"<a href=\"../Home.html\">&#x1f449; &#x2b05; Voltar para HOME</a>","children":[],"payload":{"tag":"li","lines":"8,10"}}],"payload":{"tag":"h1","lines":"6,7"}},{"content":"&#x1f9e0; 1. A","children":[{"content":"1.1 Array &#x2014; criar listas de dados","children":[{"content":"","children":[{"content":"<code>let lista = [1,2,3]</code>","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"<code>push()</code> adiciona item","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"<code>pop()</code> remove &#xfa;ltimo","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"<code>map()</code> transforma valores","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<code>filter()</code> filtra itens","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"ul","lines":"17,23"}},{"content":"armazena e manipula conjuntos de dados","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"1.2 Arrow Function &#x2014; criar fun&#xe7;&#xf5;es curtas","children":[{"content":"<code>const soma = (a,b) =&gt; a + b</code>","children":[],"payload":{"tag":"li","lines":"29,31"}},{"content":"","children":[{"content":"reduz c&#xf3;digo de fun&#xe7;&#xf5;es simples","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"melhora leitura","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"ul","lines":"32,35"}}],"payload":{"tag":"h2","lines":"28,29"}}],"payload":{"tag":"h1","lines":"14,15"}},{"content":"&#x1f9e0; 2. D","children":[{"content":"2.1 DOM &#x2014; acessar elementos HTML","children":[{"content":"","children":[{"content":"<code>document.getElementById(&quot;id&quot;)</code>","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"<code>document.querySelector(&quot;.classe&quot;)</code>","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"<code>innerHTML</code> altera conte&#xfa;do","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"<code>style</code> altera CSS","children":[],"payload":{"tag":"li","lines":"43,45"}}],"payload":{"tag":"ul","lines":"40,45"}},{"content":"","children":[{"content":"conecta JS com HTML","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"permite alterar p&#xe1;gina em tempo real","children":[],"payload":{"tag":"li","lines":"47,49"}}],"payload":{"tag":"ul","lines":"46,49"}}],"payload":{"tag":"h2","lines":"39,40"}},{"content":"2.2 Debug &#x2014; identificar erros","children":[{"content":"","children":[{"content":"<code>console.log()</code>","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"DevTools (F12)","children":[],"payload":{"tag":"li","lines":"53,54"}},{"content":"breakpoints","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"ul","lines":"52,56"}},{"content":"ajuda a encontrar erros no c&#xf3;digo","children":[],"payload":{"tag":"li","lines":"57,59"}}],"payload":{"tag":"h2","lines":"51,52"}}],"payload":{"tag":"h1","lines":"37,38"}},{"content":"&#x1f9e0; 3. E","children":[{"content":"3.1 Event &#x2014; a&#xe7;&#xf5;es do usu&#xe1;rio","children":[{"content":"","children":[{"content":"click","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"keydown","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"mouseover","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"submit","children":[],"payload":{"tag":"li","lines":"67,69"}}],"payload":{"tag":"ul","lines":"64,69"}},{"content":"detecta intera&#xe7;&#xe3;o do usu&#xe1;rio","children":[],"payload":{"tag":"li","lines":"70,72"}}],"payload":{"tag":"h2","lines":"63,64"}},{"content":"3.2 addEventListener &#x2014; ouvir eventos","children":[{"content":"<code>element.addEventListener(&quot;click&quot;, funcao)</code>","children":[],"payload":{"tag":"li","lines":"75,77"}},{"content":"executa c&#xf3;digo quando evento acontece","children":[],"payload":{"tag":"li","lines":"78,80"}}],"payload":{"tag":"h2","lines":"74,75"}}],"payload":{"tag":"h1","lines":"61,62"}},{"content":"&#x1f9e0; 4. F","children":[{"content":"4.1 Function &#x2014; criar fun&#xe7;&#xf5;es","children":[{"content":"","children":[{"content":"<code>function nome() {}</code>","children":[],"payload":{"tag":"li","lines":"85,86"}},{"content":"<code>return valor</code>","children":[],"payload":{"tag":"li","lines":"86,88"}}],"payload":{"tag":"ul","lines":"85,88"}},{"content":"executa tarefas reutiliz&#xe1;veis","children":[],"payload":{"tag":"li","lines":"89,91"}}],"payload":{"tag":"h2","lines":"84,85"}}],"payload":{"tag":"h1","lines":"82,83"}},{"content":"&#x1f9e0; 5. L","children":[{"content":"5.1 Loop &#x2014; repeti&#xe7;&#xe3;o","children":[{"content":"","children":[{"content":"<code>for</code>","children":[],"payload":{"tag":"li","lines":"96,97"}},{"content":"<code>while</code>","children":[],"payload":{"tag":"li","lines":"97,98"}},{"content":"<code>forEach</code>","children":[],"payload":{"tag":"li","lines":"98,100"}}],"payload":{"tag":"ul","lines":"96,100"}},{"content":"repete a&#xe7;&#xf5;es automaticamente","children":[],"payload":{"tag":"li","lines":"101,103"}}],"payload":{"tag":"h2","lines":"95,96"}}],"payload":{"tag":"h1","lines":"93,94"}},{"content":"&#x1f9e0; 6. O","children":[{"content":"6.1 Object &#x2014; estrutura de dados","children":[{"content":"<code>let pessoa = {nome:&quot;Jo&#xe3;o&quot;, idade:20}</code>","children":[],"payload":{"tag":"li","lines":"108,110"}},{"content":"organiza informa&#xe7;&#xf5;es em pares chave/valor","children":[],"payload":{"tag":"li","lines":"111,113"}}],"payload":{"tag":"h2","lines":"107,108"}}],"payload":{"tag":"h1","lines":"105,106"}},{"content":"&#x1f9e0; 7. S","children":[{"content":"7.1 String &#x2014; manipular texto","children":[{"content":"","children":[{"content":"<code>length</code>","children":[],"payload":{"tag":"li","lines":"118,119"}},{"content":"<code>toUpperCase()</code>","children":[],"payload":{"tag":"li","lines":"119,120"}},{"content":"<code>slice()</code>","children":[],"payload":{"tag":"li","lines":"120,122"}}],"payload":{"tag":"ul","lines":"118,122"}},{"content":"trabalha com textos","children":[],"payload":{"tag":"li","lines":"123,125"}}],"payload":{"tag":"h2","lines":"117,118"}},{"content":"7.2 Storage &#x2014; salvar dados no navegador","children":[{"content":"","children":[{"content":"<code>localStorage.setItem()</code>","children":[],"payload":{"tag":"li","lines":"128,129"}},{"content":"<code>localStorage.getItem()</code>","children":[],"payload":{"tag":"li","lines":"129,130"}},{"content":"<code>sessionStorage</code>","children":[],"payload":{"tag":"li","lines":"130,132"}}],"payload":{"tag":"ul","lines":"128,132"}},{"content":"guarda dados no navegador","children":[],"payload":{"tag":"li","lines":"133,135"}}],"payload":{"tag":"h2","lines":"127,128"}}],"payload":{"tag":"h1","lines":"115,116"}},{"content":"&#x1f9e0; 8. V","children":[{"content":"8.1 Variable &#x2014; armazenar valores","children":[{"content":"","children":[{"content":"<code>let</code>","children":[],"payload":{"tag":"li","lines":"140,141"}},{"content":"<code>const</code>","children":[],"payload":{"tag":"li","lines":"141,142"}},{"content":"<code>var</code>","children":[],"payload":{"tag":"li","lines":"142,144"}}],"payload":{"tag":"ul","lines":"140,144"}},{"content":"guarda dados para uso no c&#xf3;digo","children":[],"payload":{"tag":"li","lines":"145,147"}}],"payload":{"tag":"h2","lines":"139,140"}}],"payload":{"tag":"h1","lines":"137,138"}},{"content":"&#x2699;&#xfe0f; RESUMO FINAL","children":[{"content":"manipular HTML (DOM)","children":[],"payload":{"tag":"li","lines":"153,154"}},{"content":"reagir a eventos do usu&#xe1;rio","children":[],"payload":{"tag":"li","lines":"154,155"}},{"content":"processar dados","children":[],"payload":{"tag":"li","lines":"155,156"}},{"content":"criar l&#xf3;gica din&#xe2;mica","children":[],"payload":{"tag":"li","lines":"156,157"}},{"content":"armazenar informa&#xe7;&#xf5;es","children":[],"payload":{"tag":"li","lines":"157,158"}}],"payload":{"tag":"h1","lines":"149,150"}}]},{"initialExpandLevel":3,"colorFreezeLevel":2})</script>
+</body>
+</html>
